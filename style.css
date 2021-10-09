@@ -1,0 +1,247 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+   outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@font-face {
+	font-family: Lato;
+	src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+font-family: IndieFlower-Regular;
+src: url(fonts/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url(fonts/Roboto-Light.ttf);
+}
+
+.container {
+   margin: 4em 10em;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 70%;
+}
+
+
+.price {
+	max-width: 23.33%;
+	padding: 1em;
+}
+
+.price__title {
+	font-family: Lato;
+	margin-bottom: 10px;
+}
+
+.price__title::before {
+	content: "Pricing Plan";
+	font-size: 0.7em;
+	font-family: IndieFlower-Regular;
+	color: #EE5A5F;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.silver {
+	position: relative;
+	padding: 0 3em;
+	display: flex;
+	flex-direction: column;
+	max-width: 23.33%;
+
+}
+
+.silver__icon {
+	width: 4em;
+	height: 4em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+   justify-content: center;
+	border-radius: 50%;
+	background-color: #00bfa7;
+}
+
+.silver__icon--modified {
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	border-style: solid;
+   border-width: 3px;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.s-icon__prise {
+	color: black;
+	font-family: Roboto-Light;
+	font-size: 1.5em;
+}
+
+.silver__title {
+	font-family: Roboto-Light;
+	font-size: 1em;
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.list__item {
+	position: relative;
+	display: block;
+	margin-top: 1em;
+}
+
+
+.list__item::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: url(images/green_check.jpg);
+	background-position: center;
+	background-size: contain;
+	position: relative;
+	left: -10%;
+}
+
+.silver__btn {
+	background-color: #00bfa7;
+	border: none;
+	width: 60%;
+	height: 2em;
+	margin-top: 3em;
+	border-radius: 20px 0px ;
+	display: inline-block;
+}
+
+
+
+.golden {
+	position: relative;
+	padding: 0 3em;
+	display: flex;
+	flex-direction: column;
+	max-width: 23.33%;
+}
+
+.golden__icon {
+	width: 4em;
+	height: 4em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+   justify-content: center;
+	border-radius: 50%;
+	background-color: #ff3529;
+}
+
+.golden__icon--modified {
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	border-style: solid;
+   border-width: 3px;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.g-icon__prise {
+	color: black;
+	font-family: Roboto-Light;
+	font-size: 1.5em;
+}
+
+
+.golden__title {
+	font-family: Roboto-Light;
+	font-size: 1em;
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.g-list__item {
+	position: relative;
+	display: block;
+	margin-top: 1em;
+}
+
+.g-list__item::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: url(images/red_check.png);
+	background-position: center;
+	background-size: contain;
+	position: relative;
+	left: -10%;
+}
+
+.golden__btn {
+	background-color: #ff3529;
+	color: blanchedalmond;
+	border: none;
+	width: 60%;
+	height: 2em;
+	margin-top: 3em;
+	border-radius: 20px 0px ;
+	display: inline-block;
+}
