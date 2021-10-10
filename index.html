@@ -10,23 +10,31 @@
 </head>
 
 <body>
+   <!-- 1. Please provide more concrete class names. 'container' is too generic. For example, 'pricing_plan' would be better. -->
    <section class="container">
       <div class="price">
+         <!-- 7. h3 tag is preferable. h1 is used for page title/topic/etc. -->
          <h1 class="price__title">Our Pricing</h1>
+         <!-- 2. 'price__subtitle' should be here rather than 'title__subtitle'. Your block element is 'price', right? -->
          <p class="title__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam deserunt neque id
             unde
             aut rem, dolores fugiat. Cum molestiae totam aliquid aliquam.
          </p>
       </div>
 
+      <!-- 5. It's not that informative. What's actually silver? Would be better to say 'silver-pack' or so. Same for 'golden' -->
       <div class="silver">
          <div class="silver__icon">
+            <!-- 3. Modificators could not be used on their own. They should change state of existing element. Thus. you can use on the same level 'silver__icon silver__icon--modified'. Ask me for any details on this during our next lesson. -->
             <div class="silver__icon--modified">
+               <!-- 4. Maybe silver__icon-price? -->
                <span class="s-icon__prise">&#36;30</span>
             </div>
          </div>
+         <!-- 6. You can have only 1 h1 tag per page. Have to use h4 tag or so. Follow this link: https://www.investisdigital.com/blog/seo/using-h1-tag-improves-search-engine-ranking -->
          <h1 class="silver__title"> Silver Pack</h1>
          <ul class="silver__list">
+            <!-- 8. You have lost your block name. Should be 'silver__list-item' -->
             <li class="list__item">Lorem, ipsum dolor.</li>
             <li class="list__item">Lorem, ipsum dolor.</li>
             <li class="list__item">Lorem, ipsum dolor.</li>
@@ -36,6 +44,7 @@
 
       <div class="golden">
          <div class="golden__icon">
+            <!-- 9. Check comment #3 -->
             <div class="golden__icon--modified">
                <span class="g-icon__prise">&#36;70</span>
             </div>

@@ -1,3 +1,4 @@
+/* 1. I would move reset style into separate file. */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,8 +95,10 @@ src: url(fonts/IndieFlower-Regular.ttf);
 .silver {
 	position: relative;
 	padding: 0 3em;
+	/* 2. You can avoid display: flex; actually, it will work (you just have to adjust the margin, toggle flex value in devtools to see the UI difference). */
 	display: flex;
 	flex-direction: column;
+	/* 3. Don't set width like this. Use values like 25%, 30% or so. */
 	max-width: 23.33%;
 
 }
@@ -104,7 +107,7 @@ src: url(fonts/IndieFlower-Regular.ttf);
 	width: 4em;
 	height: 4em;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row; /* 4. this value is default for flex containers. You can avoid writing this line. */
 	align-items: center;
    justify-content: center;
 	border-radius: 50%;
@@ -154,7 +157,7 @@ src: url(fonts/IndieFlower-Regular.ttf);
 	background-position: center;
 	background-size: contain;
 	position: relative;
-	left: -10%;
+	left: -10%; /* 5. Better using margin-right property. Avoid negative values as much as you can. */
 }
 
 .silver__btn {
